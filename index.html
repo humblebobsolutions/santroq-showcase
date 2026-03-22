@@ -1,0 +1,1049 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SANT ROQ - Collection</title>
+<style>
+:root {
+  --gold: #C5A572;
+  --gold-light: #D4BC8E;
+  --charcoal: #1C1917;
+  --warm-grey: #F5F3F0;
+  --light-grey: #E8E5E1;
+  --white: #FFFFFF;
+  --green: #2D7A4F;
+  --red: #C44B4B;
+  --font: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: var(--font); background: var(--white); color: var(--charcoal); }
+
+/* Header */
+.header {
+  padding: 24px 48px;
+  border-bottom: 1px solid var(--light-grey);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.logo {
+  font-size: 22px;
+  font-weight: 300;
+  letter-spacing: 6px;
+  text-transform: uppercase;
+  color: var(--charcoal);
+}
+.header-right { display: flex; align-items: center; gap: 16px; }
+.tab-bar { display: flex; gap: 0; }
+.tab {
+  padding: 8px 20px;
+  font-size: 13px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  cursor: pointer;
+  border: 1px solid var(--light-grey);
+  background: var(--white);
+  color: #888;
+  transition: all 0.2s;
+}
+.tab:first-child { border-radius: 4px 0 0 4px; }
+.tab:last-child { border-radius: 0 4px 4px 0; }
+.tab.active { background: var(--charcoal); color: var(--white); border-color: var(--charcoal); }
+.curate-toggle {
+  padding: 8px 16px;
+  font-size: 11px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  cursor: pointer;
+  border: 1px solid var(--gold);
+  background: transparent;
+  color: var(--gold);
+  border-radius: 4px;
+  transition: all 0.2s;
+}
+.curate-toggle.active { background: var(--gold); color: var(--white); }
+
+/* Progress bar */
+.progress-bar {
+  padding: 8px 48px;
+  background: var(--warm-grey);
+  font-size: 12px;
+  color: #888;
+  display: none;
+  align-items: center;
+  gap: 12px;
+}
+.progress-bar.visible { display: flex; }
+.progress-track {
+  flex: 1;
+  height: 4px;
+  background: var(--light-grey);
+  border-radius: 2px;
+}
+.progress-fill {
+  height: 100%;
+  background: var(--gold);
+  border-radius: 2px;
+  transition: width 0.3s;
+}
+
+/* Color swatches */
+.swatch-bar {
+  padding: 24px 48px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  border-bottom: 1px solid var(--light-grey);
+}
+.swatch-label {
+  font-size: 11px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #999;
+  margin-right: 8px;
+}
+.swatch {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  cursor: pointer;
+  border: 2px solid transparent;
+  transition: all 0.2s;
+  position: relative;
+}
+.swatch:hover { transform: scale(1.1); }
+.swatch.active { border-color: var(--charcoal); box-shadow: 0 0 0 2px var(--white), 0 0 0 4px var(--charcoal); }
+.swatch-black { background: #1a1a1a; }
+.swatch-navy { background: #2a3444; }
+.swatch-off-white { background: #e8e2d8; }
+.swatch-safari { background: #8a7e6a; }
+.swatch-sand { background: #c4b49a; }
+.swatch-taupe { background: #7a7268; }
+.swatch-terra { background: #c47e6a; }
+.color-name {
+  font-size: 13px;
+  margin-left: auto;
+  letter-spacing: 1px;
+}
+
+/* Main PDP layout */
+.pdp {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 48px;
+  display: grid;
+  grid-template-columns: 1fr 400px;
+  gap: 48px;
+}
+.gallery {
+  display: grid;
+  grid-template-columns: 80px 1fr;
+  gap: 12px;
+}
+.gallery-thumbs {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.gallery-thumb {
+  width: 80px;
+  height: 100px;
+  object-fit: cover;
+  cursor: pointer;
+  border: 2px solid transparent;
+  border-radius: 4px;
+  opacity: 0.6;
+  transition: all 0.2s;
+}
+.gallery-thumb:hover { opacity: 0.9; }
+.gallery-thumb.active { border-color: var(--charcoal); opacity: 1; }
+.gallery-hero {
+  width: 100%;
+  aspect-ratio: 3/4;
+  object-fit: contain;
+  background: var(--white);
+  border-radius: 4px;
+  cursor: zoom-in;
+}
+.product-info { padding-top: 20px; }
+.product-title {
+  font-size: 28px;
+  font-weight: 300;
+  letter-spacing: 2px;
+  margin-bottom: 8px;
+}
+.product-subtitle {
+  font-size: 14px;
+  color: #888;
+  letter-spacing: 1px;
+  margin-bottom: 24px;
+}
+.product-price {
+  font-size: 22px;
+  font-weight: 400;
+  margin-bottom: 32px;
+  color: var(--charcoal);
+}
+.product-desc {
+  font-size: 14px;
+  line-height: 1.8;
+  color: #666;
+  margin-bottom: 32px;
+}
+.product-details {
+  border-top: 1px solid var(--light-grey);
+  padding-top: 24px;
+}
+.detail-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 0;
+  font-size: 13px;
+  border-bottom: 1px solid var(--light-grey);
+}
+.detail-label { color: #888; }
+
+/* Curation overlay */
+.curation-panel {
+  display: none;
+  padding: 24px 48px;
+  background: var(--warm-grey);
+  border-top: 2px solid var(--gold);
+}
+.curation-panel.visible { display: block; }
+.curation-title {
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  color: var(--gold);
+}
+.shot-section {
+  margin-bottom: 24px;
+}
+.shot-label {
+  font-size: 11px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #888;
+  margin-bottom: 8px;
+}
+.version-strip {
+  display: flex;
+  gap: 8px;
+  overflow-x: auto;
+  padding-bottom: 8px;
+}
+.version-card {
+  position: relative;
+  flex-shrink: 0;
+  width: 120px;
+  cursor: pointer;
+  border-radius: 4px;
+  overflow: hidden;
+  border: 3px solid transparent;
+  transition: all 0.2s;
+}
+.version-card:hover { border-color: var(--light-grey); }
+.version-card.selected { border-color: var(--green); }
+.version-card img {
+  width: 100%;
+  aspect-ratio: 3/4;
+  object-fit: cover;
+  display: block;
+}
+.version-label {
+  font-size: 10px;
+  text-align: center;
+  padding: 4px;
+  background: var(--white);
+  color: #888;
+}
+.version-card.selected .version-label { background: var(--green); color: white; }
+.archive-btn {
+  position: absolute;
+  top: 4px;
+  right: 4px;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background: rgba(196,75,75,0.85);
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+  line-height: 24px;
+  text-align: center;
+  display: none;
+}
+.version-card:hover .archive-btn { display: block; }
+
+/* Lightbox */
+.lightbox {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.92);
+  z-index: 1000;
+  align-items: center;
+  justify-content: center;
+  cursor: zoom-out;
+}
+.lightbox.open { display: flex; }
+.lightbox img {
+  max-width: 90vw;
+  max-height: 90vh;
+  object-fit: contain;
+}
+.lightbox-close {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 32px;
+  color: white;
+  cursor: pointer;
+  background: none;
+  border: none;
+}
+
+/* References tab */
+.refs-page { display: none; padding: 40px 48px; max-width: 1200px; margin: 0 auto; }
+.refs-page.visible { display: block; }
+.refs-category {
+  margin-bottom: 32px;
+}
+.refs-category-title {
+  font-size: 14px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #888;
+  margin-bottom: 12px;
+  border-bottom: 1px solid var(--light-grey);
+  padding-bottom: 8px;
+}
+.refs-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 12px;
+}
+.ref-card img {
+  width: 100%;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.ref-card-label {
+  font-size: 11px;
+  color: #888;
+  margin-top: 4px;
+  text-align: center;
+}
+
+/* Nav tabs for pages */
+.page-nav {
+  display: flex;
+  gap: 0;
+  margin-left: 24px;
+}
+.page-tab {
+  padding: 8px 20px;
+  font-size: 12px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  cursor: pointer;
+  border-bottom: 2px solid transparent;
+  color: #888;
+  transition: all 0.2s;
+}
+.page-tab.active { color: var(--charcoal); border-bottom-color: var(--charcoal); }
+.download-btn {
+  display: inline-block;
+  padding: 12px 24px;
+  font-size: 12px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: var(--white);
+  background: var(--charcoal);
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-bottom: 24px;
+  transition: background 0.2s;
+}
+.download-btn:hover { background: #333; }
+
+/* Mobile responsive */
+@media (max-width: 900px) {
+  .header { padding: 16px 20px; flex-wrap: wrap; gap: 12px; }
+  .logo { font-size: 18px; letter-spacing: 4px; }
+  .header-right { width: 100%; justify-content: space-between; }
+  .page-nav { margin-left: 0; }
+  .page-tab { padding: 6px 12px; font-size: 11px; }
+  .tab { padding: 6px 14px; font-size: 11px; }
+  .curate-toggle { padding: 6px 10px; font-size: 10px; }
+  .swatch-bar { padding: 16px 20px; flex-wrap: wrap; gap: 10px; }
+  .swatch { width: 28px; height: 28px; }
+  .color-name { width: 100%; margin-left: 0; margin-top: 4px; }
+  .progress-bar { padding: 8px 20px; }
+  .pdp { padding: 20px; grid-template-columns: 1fr; gap: 24px; }
+  .gallery { grid-template-columns: 60px 1fr; gap: 8px; }
+  .gallery-thumb { width: 60px; height: 75px; }
+  .product-info { padding-top: 0; }
+  .product-title { font-size: 22px; }
+  .curation-panel { padding: 16px 20px; }
+  .version-card { width: 90px; }
+  .refs-page { padding: 20px; }
+  .refs-grid { grid-template-columns: repeat(auto-fill, minmax(140px, 1fr)); }
+}
+
+@media (max-width: 500px) {
+  .header { padding: 12px 16px; }
+  .header-right { flex-wrap: wrap; gap: 8px; }
+  .tab-bar { width: 100%; }
+  .tab { flex: 1; text-align: center; padding: 8px 8px; font-size: 10px; }
+  .swatch-bar { padding: 12px 16px; }
+  .pdp { padding: 12px 16px; }
+  .gallery { grid-template-columns: 1fr; }
+  .gallery-thumbs { flex-direction: row; order: 2; overflow-x: auto; }
+  .gallery-thumb { width: 60px; height: 75px; flex-shrink: 0; }
+  .gallery-hero { order: 1; }
+  .product-title { font-size: 20px; }
+  .product-price { font-size: 18px; }
+  .curation-panel { padding: 12px 16px; }
+  .version-card { width: 80px; }
+  .refs-grid { grid-template-columns: repeat(auto-fill, minmax(100px, 1fr)); gap: 8px; }
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <div style="display:flex;align-items:center;gap:24px;">
+    <div class="logo">Sant Roq</div>
+    <div class="page-nav">
+      <div class="page-tab active" data-page="collection">Collection</div>
+      <div class="page-tab" data-page="models">Models</div>
+      <div class="page-tab" data-page="references">References</div>
+    </div>
+  </div>
+  <div class="header-right">
+    <div class="tab-bar">
+      <div class="tab active" data-sleeve="short">Short Sleeve</div>
+      <div class="tab" data-sleeve="long">Long Sleeve</div>
+    </div>
+    <button class="curate-toggle" id="zipBtn" onclick="downloadSelectedZip()" style="border-color:var(--charcoal);color:var(--charcoal);">Download Selected (ZIP)</button>
+    <button class="curate-toggle" id="curateBtn">Curate</button>
+  </div>
+</div>
+
+<div class="progress-bar" id="progressBar">
+  <span id="progressText">0/14 products selected</span>
+  <div class="progress-track"><div class="progress-fill" id="progressFill"></div></div>
+</div>
+
+<div class="swatch-bar" id="swatchBar">
+  <span class="swatch-label">Color</span>
+  <div class="swatch swatch-black active" data-color="black"></div>
+  <div class="swatch swatch-navy" data-color="navy"></div>
+  <div class="swatch swatch-off-white" data-color="off-white"></div>
+  <div class="swatch swatch-safari" data-color="safari"></div>
+  <div class="swatch swatch-sand" data-color="sand"></div>
+  <div class="swatch swatch-taupe" data-color="taupe"></div>
+  <div class="swatch swatch-terra" data-color="terra"></div>
+  <span class="color-name" id="colorName">Black</span>
+</div>
+
+<!-- Collection page -->
+<div id="collectionPage">
+  <div class="pdp" id="pdp">
+    <div class="gallery">
+      <div class="gallery-thumbs" id="galleryThumbs"></div>
+      <img class="gallery-hero" id="galleryHero" src="" alt="Product">
+    </div>
+    <div class="product-info">
+      <div class="product-title" id="productTitle">Short Sleeve Polo</div>
+      <div class="product-subtitle" id="productSubtitle">Premium Knit Polo</div>
+      <div class="product-price">&euro;149</div>
+      <a id="downloadBtn" class="download-btn" download>Download High-Res (PNG)</a>
+      <div class="product-desc">
+        Crafted from premium cotton-blend knit with a distinctive melange texture.
+        Features an upright one-piece collar with hidden button-down tabs,
+        tonal vegan suede placket lining, translucent mother-of-pearl buttons,
+        and the signature SR gold emblem. A functional sunglasses loop at the
+        placket completes this refined essential.
+      </div>
+      <div class="product-details">
+        <div class="detail-row"><span class="detail-label">Material</span><span>Premium Cotton Blend Knit</span></div>
+        <div class="detail-row"><span class="detail-label">Collar</span><span>One-piece, upright with hidden button-down</span></div>
+        <div class="detail-row"><span class="detail-label">Placket</span><span>Tonal vegan suede lining</span></div>
+        <div class="detail-row"><span class="detail-label">Buttons</span><span>3x Mother-of-pearl, 4-hole</span></div>
+        <div class="detail-row"><span class="detail-label">Logo</span><span>Gold SR metal emblem</span></div>
+        <div class="detail-row"><span class="detail-label">Special</span><span>Sunglasses loop at placket</span></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="curation-panel" id="curationPanel">
+    <div class="curation-title">Select best version for each shot</div>
+    <div id="curationShots"></div>
+  </div>
+</div>
+
+<!-- Models page -->
+<div class="refs-page" id="modelsPage"></div>
+
+<!-- References page -->
+<div class="refs-page" id="refsPage"></div>
+
+<!-- Lightbox -->
+<div class="lightbox" id="lightbox">
+  <button class="lightbox-close">&times;</button>
+  <img id="lightboxImg" src="" alt="">
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/dist/umd/supabase.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jszip@3/dist/jszip.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/file-saver@2/dist/FileSaver.min.js"></script>
+<script>
+// Supabase config (same project as Petrol showcase)
+const SUPABASE_URL  = 'https://zouecwvexmtaxunfehvx.supabase.co';
+const SUPABASE_ANON = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InpvdWVjd3ZleG10YXh1bmZlaHZ4Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzI1NDYyMjYsImV4cCI6MjA4ODEyMjIyNn0.9q60J9faDXyKWoUo6R1HZApHbT0vygXhFQW74hpvwSw';
+const sb = window.supabase ? window.supabase.createClient(SUPABASE_URL, SUPABASE_ANON) : null;
+
+async function loadSelectionsFromDB() {
+  if (!sb) return {};
+  try {
+    const { data } = await sb.from('santroq_selections').select('*');
+    if (!data) return {};
+    const sel = {};
+    data.forEach(row => {
+      if (!sel[row.product_id]) sel[row.product_id] = {};
+      sel[row.product_id][row.shot] = row.version;
+    });
+    return sel;
+  } catch { return {}; }
+}
+
+async function saveSelectionToDB(pid, shot, version) {
+  if (!sb) return;
+  try {
+    await sb.from('santroq_selections').upsert(
+      { product_id: pid, shot, version, updated_at: new Date().toISOString() },
+      { onConflict: 'product_id,shot' }
+    );
+  } catch (e) { console.warn('DB save failed, using localStorage fallback', e); }
+}
+
+const S = {
+  manifest: null,
+  selections: {},
+  currentColor: 'black',
+  currentSleeve: 'short',
+  currentHeroShot: 'front',
+  curateMode: false,
+  currentPage: 'collection',
+};
+
+const R2_BASE = 'https://pub-0028b4bff8764297a0bf4b401f711a82.r2.dev/santroq/master';
+const SHOT_LABELS = {front: 'Front', back: 'Back', detail: 'Detail', collar: 'Collar'};
+const COLOR_LABELS = {
+  black: 'Black', navy: 'Navy', 'off-white': 'Off-White',
+  safari: 'Safari Park', sand: 'Sand', taupe: 'Taupe', terra: 'Terra Cotta'
+};
+
+// Detect mode: if /api/manifest works, use server mode. Otherwise static.
+let USE_SERVER = false;
+
+async function init() {
+  let manifest, selections;
+  try {
+    const res = await fetch('/api/manifest');
+    if (res.ok) {
+      manifest = await res.json();
+      selections = await fetch('/api/selections').then(r => r.json());
+      USE_SERVER = true;
+    } else throw new Error('no server');
+  } catch {
+    manifest = await fetch('manifest.json').then(r => r.json());
+    USE_SERVER = false;
+  }
+  // Load selections from Supabase first, fallback to localStorage
+  selections = await loadSelectionsFromDB();
+  if (!Object.keys(selections).length) {
+    selections = JSON.parse(localStorage.getItem('santroq_selections') || '{}');
+  }
+  S.feedback = await loadFeedback();
+  S.manifest = manifest;
+  S.selections = selections;
+  // Apply saved selections to manifest
+  Object.entries(S.selections).forEach(([pid, shots]) => {
+    const p = S.manifest.products.find(pp => pp.id === pid);
+    if (p) Object.entries(shots).forEach(([shot, ver]) => { if (p.shots[shot]) p.shots[shot].selected = ver; });
+  });
+  render();
+  bindEvents();
+}
+
+function getProduct() {
+  const pid = `${S.currentColor}-${S.currentSleeve}`;
+  return S.manifest.products.find(p => p.id === pid);
+}
+
+function imgUrl(color, filename) {
+  const c = filename.includes('safari-2') ? 'safari-2' : filename.includes('terra-2') ? 'terra-2' : color;
+  const f = USE_SERVER ? filename : filename.replace('.png', '.jpg');
+  return `img/${c}/${f}`;
+}
+
+function hiresUrl(color, filename) {
+  const c = filename.includes('safari-2') ? 'safari-2' : filename.includes('terra-2') ? 'terra-2' : color;
+  return `${R2_BASE}/${c}/${filename}`;
+}
+
+function thumbUrl(color, filename) {
+  const c = filename.includes('safari-2') ? 'safari-2' : filename.includes('terra-2') ? 'terra-2' : color;
+  const f = USE_SERVER ? filename : filename.replace('.png', '.jpg');
+  return USE_SERVER ? `/thumb/${c}/${f}` : `thumb/${c}/${f}`;
+}
+
+function getSelectedOrFirst(product, shot) {
+  const s = product.shots[shot];
+  if (s.selected && s.versions.includes(s.selected)) return s.selected;
+  return s.versions[0] || null;
+}
+
+function render() {
+  const product = getProduct();
+  if (!product) return;
+
+  // Title
+  document.getElementById('productTitle').textContent =
+    `${S.currentSleeve === 'short' ? 'Short' : 'Long'} Sleeve Polo`;
+  document.getElementById('productSubtitle').textContent = COLOR_LABELS[S.currentColor];
+  document.getElementById('colorName').textContent = COLOR_LABELS[S.currentColor];
+
+  // Gallery thumbs + hero
+  const thumbsEl = document.getElementById('galleryThumbs');
+  thumbsEl.innerHTML = '';
+  const shots = ['front', 'back', 'detail', 'collar'];
+  shots.forEach(shot => {
+    const file = getSelectedOrFirst(product, shot);
+    if (!file) return;
+    const img = document.createElement('img');
+    img.className = `gallery-thumb ${shot === S.currentHeroShot ? 'active' : ''}`;
+    img.src = thumbUrl(product.color, file);
+    img.alt = SHOT_LABELS[shot];
+    img.onclick = () => { S.currentHeroShot = shot; render(); };
+    thumbsEl.appendChild(img);
+  });
+
+  const heroFile = getSelectedOrFirst(product, S.currentHeroShot);
+  const heroEl = document.getElementById('galleryHero');
+  const dlBtn = document.getElementById('downloadBtn');
+  if (heroFile) {
+    heroEl.src = imgUrl(product.color, heroFile);
+    heroEl.onclick = () => openLightbox(imgUrl(product.color, heroFile));
+    dlBtn.href = hiresUrl(product.color, heroFile);
+    dlBtn.download = heroFile;
+  }
+
+  // Swatches
+  document.querySelectorAll('.swatch').forEach(el => {
+    el.classList.toggle('active', el.dataset.color === S.currentColor);
+  });
+
+  // Sleeve tabs
+  document.querySelectorAll('.tab[data-sleeve]').forEach(el => {
+    el.classList.toggle('active', el.dataset.sleeve === S.currentSleeve);
+  });
+
+  // Curation panel
+  const curationEl = document.getElementById('curationPanel');
+  curationEl.classList.toggle('visible', S.curateMode);
+  document.getElementById('curateBtn').classList.toggle('active', S.curateMode);
+
+  if (S.curateMode) {
+    renderCuration(product);
+    updateProgress();
+  }
+
+  // Progress bar
+  document.getElementById('progressBar').classList.toggle('visible', S.curateMode);
+}
+
+function renderCuration(product) {
+  const container = document.getElementById('curationShots');
+  container.innerHTML = '';
+  const pid = product.id;
+
+  ['front', 'back', 'detail', 'collar'].forEach(shot => {
+    const section = document.createElement('div');
+    section.className = 'shot-section';
+
+    const label = document.createElement('div');
+    label.className = 'shot-label';
+    label.textContent = `${SHOT_LABELS[shot]} (${product.shots[shot].versions.length} versions)`;
+    section.appendChild(label);
+
+    const strip = document.createElement('div');
+    strip.className = 'version-strip';
+
+    product.shots[shot].versions.forEach(file => {
+      const card = document.createElement('div');
+      card.className = `version-card ${product.shots[shot].selected === file ? 'selected' : ''}`;
+
+      const img = document.createElement('img');
+      img.src = thumbUrl(product.color, file);
+      img.loading = 'lazy';
+      img.onclick = () => selectVersion(pid, shot, file);
+      card.appendChild(img);
+
+      const vLabel = document.createElement('div');
+      vLabel.className = 'version-label';
+      const vMatch = file.match(/_v(\d+)\.png$/);
+      vLabel.textContent = vMatch ? `v${vMatch[1]}` : file;
+      card.appendChild(vLabel);
+
+      const archBtn = document.createElement('button');
+      archBtn.className = 'archive-btn';
+      archBtn.textContent = '\u00d7';
+      archBtn.onclick = (e) => { e.stopPropagation(); archiveVersion(product.color, file, pid, shot); };
+      card.appendChild(archBtn);
+
+      strip.appendChild(card);
+    });
+
+    section.appendChild(strip);
+
+    // Feedback area
+    const fbKey = `${pid}__${shot}`;
+    const existing = (S.feedback || {})[fbKey] || [];
+    const fbArea = document.createElement('div');
+    fbArea.style.cssText = 'margin-top:8px;';
+
+    if (existing.length > 0) {
+      const fbList = document.createElement('div');
+      fbList.style.cssText = 'margin-bottom:8px;';
+      existing.forEach(fb => {
+        const item = document.createElement('div');
+        item.style.cssText = 'font-size:12px;color:#666;padding:4px 8px;background:white;border-left:3px solid var(--gold);margin-bottom:4px;border-radius:2px;';
+        const time = new Date(fb.created_at).toLocaleString('en-GB', {day:'numeric',month:'short',hour:'2-digit',minute:'2-digit'});
+        item.innerHTML = `<span style="color:#999;font-size:10px;">${time}</span> ${fb.feedback}`;
+        fbList.appendChild(item);
+      });
+      fbArea.appendChild(fbList);
+    }
+
+    const fbRow = document.createElement('div');
+    fbRow.style.cssText = 'display:flex;gap:8px;align-items:flex-start;';
+    fbRow.innerHTML = `
+      <textarea id="feedback-${pid}-${shot}" placeholder="Leave revision feedback for this shot..." style="flex:1;padding:6px 8px;font-size:12px;border:1px solid var(--light-grey);border-radius:4px;resize:none;height:36px;font-family:var(--font);"></textarea>
+      <button onclick="submitFeedback('${pid}','${shot}')" style="padding:6px 12px;font-size:11px;border:1px solid var(--gold);background:var(--gold);color:white;border-radius:4px;cursor:pointer;white-space:nowrap;">Submit</button>`;
+    fbArea.appendChild(fbRow);
+    section.appendChild(fbArea);
+
+    container.appendChild(section);
+  });
+}
+
+async function selectVersion(pid, shot, file) {
+  // Update local state
+  const product = S.manifest.products.find(p => p.id === pid);
+  if (product) product.shots[shot].selected = file;
+  if (!S.selections[pid]) S.selections[pid] = {};
+  S.selections[pid][shot] = file;
+
+  // Save to Supabase + localStorage
+  saveSelectionToDB(pid, shot, file);
+  localStorage.setItem('santroq_selections', JSON.stringify(S.selections));
+  if (USE_SERVER) {
+    fetch('/api/selections', {
+      method: 'POST',
+      headers: {'Content-Type': 'application/json'},
+      body: JSON.stringify({product_id: pid, shot, version: file}),
+    }).catch(() => {});
+  }
+  render();
+}
+
+// Feedback system
+async function loadFeedback() {
+  if (!sb) return {};
+  try {
+    const { data } = await sb.from('santroq_feedback').select('*').order('created_at', { ascending: false });
+    if (!data) return {};
+    const fb = {};
+    data.forEach(row => {
+      const key = `${row.product_id}__${row.shot}`;
+      if (!fb[key]) fb[key] = [];
+      fb[key].push(row);
+    });
+    return fb;
+  } catch { return {}; }
+}
+
+async function submitFeedback(pid, shot) {
+  const textarea = document.getElementById(`feedback-${pid}-${shot}`);
+  const text = textarea.value.trim();
+  if (!text) return;
+  if (sb) {
+    await sb.from('santroq_feedback').insert({
+      product_id: pid, shot, feedback: text, created_at: new Date().toISOString()
+    });
+  }
+  textarea.value = '';
+  S.feedback = await loadFeedback();
+  render();
+}
+
+async function archiveVersion(color, filename, pid, shot) {
+  if (!confirm(`Archive ${filename}?`)) return;
+  if (USE_SERVER) {
+    await fetch('/api/archive', {
+      method: 'POST',
+      headers: {'Content-Type': 'application/json'},
+      body: JSON.stringify({color, filename}),
+    });
+  }
+  // Remove from local manifest
+  const product = S.manifest.products.find(p => p.id === pid);
+  if (product) {
+    const versions = product.shots[shot].versions;
+    const idx = versions.indexOf(filename);
+    if (idx !== -1) versions.splice(idx, 1);
+    if (product.shots[shot].selected === filename) product.shots[shot].selected = null;
+  }
+  render();
+}
+
+function updateProgress() {
+  let complete = 0;
+  S.manifest.products.forEach(p => {
+    const allSelected = ['front', 'back', 'detail', 'collar'].every(
+      shot => p.shots[shot].selected
+    );
+    if (allSelected) complete++;
+  });
+  document.getElementById('progressText').textContent = `${complete}/14 products selected`;
+  document.getElementById('progressFill').style.width = `${(complete / 14) * 100}%`;
+}
+
+function openLightbox(src) {
+  document.getElementById('lightboxImg').src = src;
+  document.getElementById('lightbox').classList.add('open');
+}
+
+function closeLightbox() {
+  document.getElementById('lightbox').classList.remove('open');
+}
+
+async function loadRefs() {
+  let refs;
+  if (USE_SERVER) {
+    refs = await fetch('/api/refs').then(r => r.json());
+  } else {
+    refs = S.manifest.refs || [];
+  }
+  const container = document.getElementById('refsPage');
+  container.innerHTML = '';
+
+  const categories = {};
+  refs.forEach(r => {
+    if (!categories[r.category]) categories[r.category] = [];
+    categories[r.category].push(r);
+  });
+
+  Object.entries(categories).forEach(([cat, items]) => {
+    const section = document.createElement('div');
+    section.className = 'refs-category';
+    section.innerHTML = `<div class="refs-category-title">${cat}</div>`;
+    const grid = document.createElement('div');
+    grid.className = 'refs-grid';
+    items.forEach(item => {
+      const card = document.createElement('div');
+      card.className = 'ref-card';
+      card.innerHTML = `<img src="${item.path}" loading="lazy"><div class="ref-card-label">${item.name}</div>`;
+      card.querySelector('img').onclick = () => openLightbox(item.path);
+      grid.appendChild(card);
+    });
+    section.appendChild(grid);
+    container.appendChild(section);
+  });
+}
+
+async function loadModelApprovals() {
+  if (!sb) return {};
+  try {
+    const { data } = await sb.from('santroq_model_approvals').select('*');
+    if (!data) return {};
+    const approvals = {};
+    data.forEach(row => { approvals[row.model_path] = row.status; });
+    return approvals;
+  } catch { return {}; }
+}
+
+async function setModelApproval(path, status) {
+  if (!sb) return;
+  try {
+    await sb.from('santroq_model_approvals').upsert(
+      { model_path: path, status, updated_at: new Date().toISOString() },
+      { onConflict: 'model_path' }
+    );
+  } catch (e) { console.warn('Model approval save failed', e); }
+  S.modelApprovals[path] = status;
+  loadModels();
+}
+
+async function loadModels() {
+  const models = S.manifest.models || [];
+  const container = document.getElementById('modelsPage');
+  container.innerHTML = '';
+
+  if (!S.modelApprovals) S.modelApprovals = await loadModelApprovals();
+
+  const MODEL_LABELS = {
+    SR01: 'SR01 - Original Silver', SR02: 'SR02 - Original Mediterranean', SR03: 'SR03 - Original Young',
+    SR10: 'SR10 - Distinguished Silver Gentleman', SR11: 'SR11 - Rugged South European (40s)',
+    SR12: 'SR12 - Young Mixed Heritage Model', indigold: 'Indigold Collection (Approved Models)'
+  };
+  const grouped = {};
+  models.forEach(m => {
+    if (!grouped[m.id]) grouped[m.id] = [];
+    grouped[m.id].push(m);
+  });
+
+  // Order: new SR first, then indigold, then old SR
+  const order = ['SR10', 'SR11', 'SR12', 'indigold', 'SR01', 'SR02', 'SR03'];
+  const sortedKeys = Object.keys(grouped).sort((a, b) => {
+    const ai = order.indexOf(a), bi = order.indexOf(b);
+    return (ai === -1 ? 99 : ai) - (bi === -1 ? 99 : bi);
+  });
+
+  sortedKeys.forEach(id => {
+    const items = grouped[id];
+    const section = document.createElement('div');
+    section.className = 'refs-category';
+    section.innerHTML = `<div class="refs-category-title">${MODEL_LABELS[id] || id} (${items.length})</div>`;
+    const grid = document.createElement('div');
+    grid.className = 'refs-grid';
+    items.forEach(item => {
+      const approval = S.modelApprovals[item.path];
+      if (approval === 'rejected') return; // hide rejected
+      const card = document.createElement('div');
+      card.className = 'ref-card';
+      card.style.position = 'relative';
+      const borderColor = approval === 'approved' ? 'var(--green)' : 'transparent';
+      card.innerHTML = `
+        <img src="${item.path}" loading="lazy" style="border:3px solid ${borderColor};border-radius:4px;">
+        <div class="ref-card-label">${item.style}</div>
+        <div style="display:flex;gap:4px;justify-content:center;margin-top:4px;">
+          <button onclick="setModelApproval('${item.path}','approved')" style="padding:4px 10px;font-size:10px;border:1px solid var(--green);background:${approval==='approved'?'var(--green)':'transparent'};color:${approval==='approved'?'white':'var(--green)'};border-radius:3px;cursor:pointer;">Approve</button>
+          <button onclick="setModelApproval('${item.path}','rejected')" style="padding:4px 10px;font-size:10px;border:1px solid var(--red);background:transparent;color:var(--red);border-radius:3px;cursor:pointer;">Remove</button>
+        </div>`;
+      card.querySelector('img').onclick = () => openLightbox(modelR2Url(item));
+      grid.appendChild(card);
+    });
+    if (id === 'indigold') grid.style.gridTemplateColumns = 'repeat(auto-fill, minmax(240px, 1fr))';
+    section.appendChild(grid);
+    container.appendChild(section);
+  });
+}
+
+function modelR2Url(item) {
+  // Map local path to R2 URL for full-res
+  // item.path like "models/indigold/Indigold_Man_49_IG49_4K_reference.jpg"
+  // R2 key: santroq/models/indigold/Indigold_Man_49_IG49_4K_reference.png
+  const r2Path = item.path.replace('.jpg', '.png');
+  return `https://pub-0028b4bff8764297a0bf4b401f711a82.r2.dev/santroq/${r2Path}`;
+}
+
+async function downloadSelectedZip() {
+  const btn = document.getElementById('zipBtn');
+  btn.textContent = 'Preparing ZIP...';
+  btn.disabled = true;
+
+  const zip = new JSZip();
+  const products = S.manifest.products;
+  let fileCount = 0;
+
+  for (const p of products) {
+    for (const [shot, data] of Object.entries(p.shots)) {
+      if (!data.selected) continue;
+      const url = hiresUrl(p.color, data.selected);
+      try {
+        const resp = await fetch(url);
+        if (resp.ok) {
+          const blob = await resp.blob();
+          const folder = `${p.color}_${p.sleeve}`;
+          zip.file(`${folder}/${data.selected}`, blob);
+          fileCount++;
+          btn.textContent = `Downloading ${fileCount} files...`;
+        }
+      } catch (e) { console.warn(`Failed to fetch ${url}`, e); }
+    }
+  }
+
+  if (fileCount === 0) {
+    btn.textContent = 'Download Selected (ZIP)';
+    btn.disabled = false;
+    alert('No images selected yet. Use Curate mode to select versions first.');
+    return;
+  }
+
+  btn.textContent = `Zipping ${fileCount} files...`;
+  const content = await zip.generateAsync({ type: 'blob' });
+  saveAs(content, 'SantRoq_Selected_HiRes.zip');
+  btn.textContent = 'Download Selected (ZIP)';
+  btn.disabled = false;
+}
+
+function switchPage(page) {
+  S.currentPage = page;
+  document.querySelectorAll('.page-tab').forEach(el => {
+    el.classList.toggle('active', el.dataset.page === page);
+  });
+  document.getElementById('collectionPage').style.display = page === 'collection' ? '' : 'none';
+  document.getElementById('swatchBar').style.display = page === 'collection' ? '' : 'none';
+  document.getElementById('progressBar').classList.toggle('visible', page === 'collection' && S.curateMode);
+  document.getElementById('modelsPage').classList.toggle('visible', page === 'models');
+  document.getElementById('refsPage').classList.toggle('visible', page === 'references');
+  if (page === 'models') loadModels();
+  if (page === 'references') loadRefs();
+}
+
+function bindEvents() {
+  // Swatches
+  document.querySelectorAll('.swatch').forEach(el => {
+    el.onclick = () => { S.currentColor = el.dataset.color; S.currentHeroShot = 'front'; render(); };
+  });
+
+  // Sleeve tabs
+  document.querySelectorAll('.tab[data-sleeve]').forEach(el => {
+    el.onclick = () => { S.currentSleeve = el.dataset.sleeve; S.currentHeroShot = 'front'; render(); };
+  });
+
+  // Curate toggle
+  document.getElementById('curateBtn').onclick = () => { S.curateMode = !S.curateMode; render(); };
+
+  // Lightbox
+  document.getElementById('lightbox').onclick = closeLightbox;
+  document.querySelector('.lightbox-close').onclick = closeLightbox;
+
+  // Page nav
+  document.querySelectorAll('.page-tab').forEach(el => {
+    el.onclick = () => switchPage(el.dataset.page);
+  });
+
+  // Keyboard
+  document.addEventListener('keydown', e => {
+    if (e.key === 'Escape') closeLightbox();
+    if (e.ctrlKey && e.key === 'e') { e.preventDefault(); S.curateMode = !S.curateMode; render(); }
+  });
+}
+
+init();
+</script>
+</body>
+</html>

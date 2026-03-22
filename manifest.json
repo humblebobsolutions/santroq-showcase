@@ -1,0 +1,1477 @@
+{
+  "products": [
+    {
+      "id": "black-short",
+      "color": "black",
+      "sleeve": "short",
+      "label": "Short Sleeve Polo - Black",
+      "shots": {
+        "front": {
+          "versions": [
+            "front-short_black_v1.png",
+            "front-short_black_v2.png",
+            "front-short_black_v3.png",
+            "front-short_black_v4.png",
+            "front-short_black_v5.png"
+          ],
+          "selected": null
+        },
+        "back": {
+          "versions": [
+            "back-short_black_v1.png",
+            "back-short_black_v2.png",
+            "back-short_black_v3.png",
+            "back-short_black_v4.png",
+            "back-short_black_v5.png",
+            "back-short_black_v6.png"
+          ],
+          "selected": null
+        },
+        "detail": {
+          "versions": [
+            "detail-short_black_v1.png",
+            "detail-short_black_v2.png"
+          ],
+          "selected": null
+        },
+        "collar": {
+          "versions": [
+            "detail-collar_black_v1.png",
+            "detail-collar_black_v2.png",
+            "detail-collar_black_v3.png",
+            "detail-collar_black_v4.png",
+            "detail-collar_black_v5.png",
+            "detail-collar_black_v6.png",
+            "detail-collar_black_v7.png"
+          ],
+          "selected": null
+        }
+      }
+    },
+    {
+      "id": "black-long",
+      "color": "black",
+      "sleeve": "long",
+      "label": "Long Sleeve Polo - Black",
+      "shots": {
+        "front": {
+          "versions": [
+            "front-long_black_v1.png",
+            "front-long_black_v2.png",
+            "front-long_black_v3.png",
+            "front-long_black_v4.png",
+            "front-long_black_v5.png"
+          ],
+          "selected": null
+        },
+        "back": {
+          "versions": [
+            "back-long_black_v1.png",
+            "back-long_black_v2.png",
+            "back-long_black_v3.png",
+            "back-long_black_v4.png",
+            "back-long_black_v5.png",
+            "back-long_black_v6.png"
+          ],
+          "selected": null
+        },
+        "detail": {
+          "versions": [
+            "detail-long_black_v1.png",
+            "detail-long_black_v2.png",
+            "detail-long_black_v3.png"
+          ],
+          "selected": null
+        },
+        "collar": {
+          "versions": [
+            "detail-collar_black_v1.png",
+            "detail-collar_black_v2.png",
+            "detail-collar_black_v3.png",
+            "detail-collar_black_v4.png",
+            "detail-collar_black_v5.png",
+            "detail-collar_black_v6.png",
+            "detail-collar_black_v7.png"
+          ],
+          "selected": null
+        }
+      }
+    },
+    {
+      "id": "navy-short",
+      "color": "navy",
+      "sleeve": "short",
+      "label": "Short Sleeve Polo - Navy",
+      "shots": {
+        "front": {
+          "versions": [
+            "front-short_navy_v1.png",
+            "front-short_navy_v2.png",
+            "front-short_navy_v3.png",
+            "front-short_navy_v4.png",
+            "front-short_navy_v5.png"
+          ],
+          "selected": null
+        },
+        "back": {
+          "versions": [
+            "back-short_navy_v1.png",
+            "back-short_navy_v2.png",
+            "back-short_navy_v3.png",
+            "back-short_navy_v4.png",
+            "back-short_navy_v5.png",
+            "back-short_navy_v6.png"
+          ],
+          "selected": null
+        },
+        "detail": {
+          "versions": [
+            "detail-short_navy_v1.png",
+            "detail-short_navy_v2.png"
+          ],
+          "selected": null
+        },
+        "collar": {
+          "versions": [
+            "detail-collar_navy_v1.png",
+            "detail-collar_navy_v2.png",
+            "detail-collar_navy_v3.png",
+            "detail-collar_navy_v4.png",
+            "detail-collar_navy_v5.png",
+            "detail-collar_navy_v6.png",
+            "detail-collar_navy_v7.png"
+          ],
+          "selected": null
+        }
+      }
+    },
+    {
+      "id": "navy-long",
+      "color": "navy",
+      "sleeve": "long",
+      "label": "Long Sleeve Polo - Navy",
+      "shots": {
+        "front": {
+          "versions": [
+            "front-long_navy_v1.png",
+            "front-long_navy_v2.png",
+            "front-long_navy_v3.png",
+            "front-long_navy_v4.png",
+            "front-long_navy_v5.png"
+          ],
+          "selected": null
+        },
+        "back": {
+          "versions": [
+            "back-long_navy_v1.png",
+            "back-long_navy_v2.png",
+            "back-long_navy_v3.png",
+            "back-long_navy_v4.png",
+            "back-long_navy_v5.png",
+            "back-long_navy_v6.png"
+          ],
+          "selected": null
+        },
+        "detail": {
+          "versions": [
+            "detail-long_navy_v1.png",
+            "detail-long_navy_v2.png",
+            "detail-long_navy_v3.png"
+          ],
+          "selected": null
+        },
+        "collar": {
+          "versions": [
+            "detail-collar_navy_v1.png",
+            "detail-collar_navy_v2.png",
+            "detail-collar_navy_v3.png",
+            "detail-collar_navy_v4.png",
+            "detail-collar_navy_v5.png",
+            "detail-collar_navy_v6.png",
+            "detail-collar_navy_v7.png"
+          ],
+          "selected": null
+        }
+      }
+    },
+    {
+      "id": "off-white-short",
+      "color": "off-white",
+      "sleeve": "short",
+      "label": "Short Sleeve Polo - Off-White",
+      "shots": {
+        "front": {
+          "versions": [
+            "front-short_off-white_v1.png",
+            "front-short_off-white_v2.png",
+            "front-short_off-white_v3.png",
+            "front-short_off-white_v4.png",
+            "front-short_off-white_v5.png"
+          ],
+          "selected": null
+        },
+        "back": {
+          "versions": [
+            "back-short_off-white_v1.png",
+            "back-short_off-white_v2.png",
+            "back-short_off-white_v3.png",
+            "back-short_off-white_v4.png",
+            "back-short_off-white_v5.png",
+            "back-short_off-white_v6.png"
+          ],
+          "selected": null
+        },
+        "detail": {
+          "versions": [
+            "detail-short_off-white_v1.png",
+            "detail-short_off-white_v2.png"
+          ],
+          "selected": null
+        },
+        "collar": {
+          "versions": [
+            "detail-collar_off-white_v1.png",
+            "detail-collar_off-white_v2.png",
+            "detail-collar_off-white_v3.png",
+            "detail-collar_off-white_v4.png",
+            "detail-collar_off-white_v5.png",
+            "detail-collar_off-white_v6.png",
+            "detail-collar_off-white_v7.png",
+            "detail-collar_off-white_v8.png"
+          ],
+          "selected": null
+        }
+      }
+    },
+    {
+      "id": "off-white-long",
+      "color": "off-white",
+      "sleeve": "long",
+      "label": "Long Sleeve Polo - Off-White",
+      "shots": {
+        "front": {
+          "versions": [
+            "front-long_off-white_v1.png",
+            "front-long_off-white_v2.png",
+            "front-long_off-white_v3.png",
+            "front-long_off-white_v4.png",
+            "front-long_off-white_v5.png"
+          ],
+          "selected": null
+        },
+        "back": {
+          "versions": [
+            "back-long_off-white_v1.png",
+            "back-long_off-white_v2.png",
+            "back-long_off-white_v3.png",
+            "back-long_off-white_v4.png",
+            "back-long_off-white_v5.png",
+            "back-long_off-white_v6.png"
+          ],
+          "selected": null
+        },
+        "detail": {
+          "versions": [
+            "detail-long_off-white_v1.png",
+            "detail-long_off-white_v2.png",
+            "detail-long_off-white_v3.png"
+          ],
+          "selected": null
+        },
+        "collar": {
+          "versions": [
+            "detail-collar_off-white_v1.png",
+            "detail-collar_off-white_v2.png",
+            "detail-collar_off-white_v3.png",
+            "detail-collar_off-white_v4.png",
+            "detail-collar_off-white_v5.png",
+            "detail-collar_off-white_v6.png",
+            "detail-collar_off-white_v7.png",
+            "detail-collar_off-white_v8.png"
+          ],
+          "selected": null
+        }
+      }
+    },
+    {
+      "id": "safari-short",
+      "color": "safari",
+      "sleeve": "short",
+      "label": "Short Sleeve Polo - Safari Park",
+      "shots": {
+        "front": {
+          "versions": [
+            "front-short_safari_v1.png",
+            "front-short_safari_v2.png",
+            "front-short_safari_v3.png",
+            "front-short_safari_v4.png",
+            "front-short_safari_v5.png",
+            "front-short_safari_v6.png",
+            "front-short_safari_v7.png",
+            "front-short_safari-2_v1.png",
+            "front-short_safari-2_v2.png",
+            "front-short_safari-2_v3.png"
+          ],
+          "selected": null
+        },
+        "back": {
+          "versions": [
+            "back-short_safari_v1.png",
+            "back-short_safari_v2.png",
+            "back-short_safari_v3.png",
+            "back-short_safari_v4.png",
+            "back-short_safari_v5.png",
+            "back-short_safari_v6.png",
+            "back-short_safari_v7.png",
+            "back-short_safari_v8.png",
+            "back-short_safari-2_v1.png",
+            "back-short_safari-2_v2.png",
+            "back-short_safari-2_v3.png",
+            "back-short_safari-2_v4.png",
+            "back-short_safari-2_v5.png"
+          ],
+          "selected": null
+        },
+        "detail": {
+          "versions": [
+            "detail-short_safari_v1.png",
+            "detail-short_safari_v2.png",
+            "detail-short_safari_v3.png",
+            "detail-short_safari_v4.png",
+            "detail-short_safari_v5.png",
+            "detail-short_safari_v6.png",
+            "detail-short_safari_v7.png",
+            "detail-short_safari_v8.png",
+            "detail-short_safari-2_v1.png"
+          ],
+          "selected": null
+        },
+        "collar": {
+          "versions": [
+            "detail-collar_safari_v1.png",
+            "detail-collar_safari_v10.png",
+            "detail-collar_safari_v2.png",
+            "detail-collar_safari_v3.png",
+            "detail-collar_safari_v4.png",
+            "detail-collar_safari_v5.png",
+            "detail-collar_safari_v6.png",
+            "detail-collar_safari_v7.png",
+            "detail-collar_safari_v8.png",
+            "detail-collar_safari_v9.png",
+            "detail-collar_safari-2_v1.png",
+            "detail-collar_safari-2_v2.png",
+            "detail-collar_safari-2_v3.png",
+            "detail-collar_safari-2_v4.png",
+            "detail-collar_safari-2_v5.png"
+          ],
+          "selected": null
+        }
+      }
+    },
+    {
+      "id": "safari-long",
+      "color": "safari",
+      "sleeve": "long",
+      "label": "Long Sleeve Polo - Safari Park",
+      "shots": {
+        "front": {
+          "versions": [
+            "front-long_safari_v1.png",
+            "front-long_safari_v2.png",
+            "front-long_safari_v3.png",
+            "front-long_safari_v4.png",
+            "front-long_safari_v5.png",
+            "front-long_safari_v6.png",
+            "front-long_safari_v7.png",
+            "front-long_safari-2_v1.png",
+            "front-long_safari-2_v2.png",
+            "front-long_safari-2_v3.png"
+          ],
+          "selected": null
+        },
+        "back": {
+          "versions": [
+            "back-long_safari_v1.png",
+            "back-long_safari_v2.png",
+            "back-long_safari_v3.png",
+            "back-long_safari_v4.png",
+            "back-long_safari_v5.png",
+            "back-long_safari_v6.png",
+            "back-long_safari_v7.png",
+            "back-long_safari_v8.png",
+            "back-long_safari-2_v1.png",
+            "back-long_safari-2_v2.png",
+            "back-long_safari-2_v3.png",
+            "back-long_safari-2_v4.png",
+            "back-long_safari-2_v5.png"
+          ],
+          "selected": null
+        },
+        "detail": {
+          "versions": [
+            "detail-long_safari_v1.png",
+            "detail-long_safari_v2.png",
+            "detail-long_safari_v3.png",
+            "detail-long_safari_v4.png",
+            "detail-long_safari_v5.png",
+            "detail-long_safari-2_v1.png",
+            "detail-long_safari-2_v2.png"
+          ],
+          "selected": null
+        },
+        "collar": {
+          "versions": [
+            "detail-collar_safari_v1.png",
+            "detail-collar_safari_v10.png",
+            "detail-collar_safari_v2.png",
+            "detail-collar_safari_v3.png",
+            "detail-collar_safari_v4.png",
+            "detail-collar_safari_v5.png",
+            "detail-collar_safari_v6.png",
+            "detail-collar_safari_v7.png",
+            "detail-collar_safari_v8.png",
+            "detail-collar_safari_v9.png",
+            "detail-collar_safari-2_v1.png",
+            "detail-collar_safari-2_v2.png",
+            "detail-collar_safari-2_v3.png",
+            "detail-collar_safari-2_v4.png",
+            "detail-collar_safari-2_v5.png"
+          ],
+          "selected": null
+        }
+      }
+    },
+    {
+      "id": "sand-short",
+      "color": "sand",
+      "sleeve": "short",
+      "label": "Short Sleeve Polo - Sand",
+      "shots": {
+        "front": {
+          "versions": [
+            "front-short_sand_v1.png",
+            "front-short_sand_v2.png",
+            "front-short_sand_v3.png",
+            "front-short_sand_v4.png",
+            "front-short_sand_v5.png"
+          ],
+          "selected": null
+        },
+        "back": {
+          "versions": [
+            "back-short_sand_v1.png",
+            "back-short_sand_v2.png",
+            "back-short_sand_v3.png",
+            "back-short_sand_v4.png",
+            "back-short_sand_v5.png",
+            "back-short_sand_v6.png"
+          ],
+          "selected": null
+        },
+        "detail": {
+          "versions": [
+            "detail-short_sand_v1.png",
+            "detail-short_sand_v2.png"
+          ],
+          "selected": null
+        },
+        "collar": {
+          "versions": [
+            "detail-collar_sand_v1.png",
+            "detail-collar_sand_v2.png",
+            "detail-collar_sand_v3.png",
+            "detail-collar_sand_v4.png",
+            "detail-collar_sand_v5.png",
+            "detail-collar_sand_v6.png",
+            "detail-collar_sand_v7.png"
+          ],
+          "selected": null
+        }
+      }
+    },
+    {
+      "id": "sand-long",
+      "color": "sand",
+      "sleeve": "long",
+      "label": "Long Sleeve Polo - Sand",
+      "shots": {
+        "front": {
+          "versions": [
+            "front-long_sand_v1.png",
+            "front-long_sand_v2.png",
+            "front-long_sand_v3.png",
+            "front-long_sand_v4.png",
+            "front-long_sand_v5.png"
+          ],
+          "selected": null
+        },
+        "back": {
+          "versions": [
+            "back-long_sand_v1.png",
+            "back-long_sand_v2.png",
+            "back-long_sand_v3.png",
+            "back-long_sand_v4.png",
+            "back-long_sand_v5.png",
+            "back-long_sand_v6.png"
+          ],
+          "selected": null
+        },
+        "detail": {
+          "versions": [
+            "detail-long_sand_v1.png",
+            "detail-long_sand_v2.png",
+            "detail-long_sand_v3.png"
+          ],
+          "selected": null
+        },
+        "collar": {
+          "versions": [
+            "detail-collar_sand_v1.png",
+            "detail-collar_sand_v2.png",
+            "detail-collar_sand_v3.png",
+            "detail-collar_sand_v4.png",
+            "detail-collar_sand_v5.png",
+            "detail-collar_sand_v6.png",
+            "detail-collar_sand_v7.png"
+          ],
+          "selected": null
+        }
+      }
+    },
+    {
+      "id": "taupe-short",
+      "color": "taupe",
+      "sleeve": "short",
+      "label": "Short Sleeve Polo - Taupe",
+      "shots": {
+        "front": {
+          "versions": [
+            "front-short_taupe_v1.png",
+            "front-short_taupe_v2.png",
+            "front-short_taupe_v3.png",
+            "front-short_taupe_v4.png",
+            "front-short_taupe_v5.png",
+            "front-short_taupe_v6.png"
+          ],
+          "selected": null
+        },
+        "back": {
+          "versions": [
+            "back-short_taupe_v1.png",
+            "back-short_taupe_v2.png",
+            "back-short_taupe_v3.png",
+            "back-short_taupe_v4.png",
+            "back-short_taupe_v5.png",
+            "back-short_taupe_v6.png",
+            "back-short_taupe_v7.png"
+          ],
+          "selected": null
+        },
+        "detail": {
+          "versions": [
+            "detail-short_taupe_v1.png",
+            "detail-short_taupe_v2.png",
+            "detail-short_taupe_v3.png",
+            "detail-short_taupe_v4.png",
+            "detail-short_taupe_v5.png",
+            "detail-short_taupe_v6.png",
+            "detail-short_taupe_v7.png"
+          ],
+          "selected": null
+        },
+        "collar": {
+          "versions": [
+            "detail-collar_taupe_v1.png",
+            "detail-collar_taupe_v2.png",
+            "detail-collar_taupe_v3.png",
+            "detail-collar_taupe_v4.png",
+            "detail-collar_taupe_v5.png",
+            "detail-collar_taupe_v6.png",
+            "detail-collar_taupe_v7.png",
+            "detail-collar_taupe_v8.png"
+          ],
+          "selected": null
+        }
+      }
+    },
+    {
+      "id": "taupe-long",
+      "color": "taupe",
+      "sleeve": "long",
+      "label": "Long Sleeve Polo - Taupe",
+      "shots": {
+        "front": {
+          "versions": [
+            "front-long_taupe_v1.png",
+            "front-long_taupe_v2.png",
+            "front-long_taupe_v3.png",
+            "front-long_taupe_v4.png",
+            "front-long_taupe_v5.png",
+            "front-long_taupe_v6.png"
+          ],
+          "selected": null
+        },
+        "back": {
+          "versions": [
+            "back-long_taupe_v1.png",
+            "back-long_taupe_v2.png",
+            "back-long_taupe_v3.png",
+            "back-long_taupe_v4.png",
+            "back-long_taupe_v5.png",
+            "back-long_taupe_v6.png",
+            "back-long_taupe_v7.png"
+          ],
+          "selected": null
+        },
+        "detail": {
+          "versions": [
+            "detail-long_taupe_v1.png",
+            "detail-long_taupe_v2.png",
+            "detail-long_taupe_v3.png",
+            "detail-long_taupe_v4.png",
+            "detail-long_taupe_v5.png",
+            "detail-long_taupe_v6.png",
+            "detail-long_taupe_v7.png",
+            "detail-long_taupe_v8.png"
+          ],
+          "selected": null
+        },
+        "collar": {
+          "versions": [
+            "detail-collar_taupe_v1.png",
+            "detail-collar_taupe_v2.png",
+            "detail-collar_taupe_v3.png",
+            "detail-collar_taupe_v4.png",
+            "detail-collar_taupe_v5.png",
+            "detail-collar_taupe_v6.png",
+            "detail-collar_taupe_v7.png",
+            "detail-collar_taupe_v8.png"
+          ],
+          "selected": null
+        }
+      }
+    },
+    {
+      "id": "terra-short",
+      "color": "terra",
+      "sleeve": "short",
+      "label": "Short Sleeve Polo - Terra Cotta",
+      "shots": {
+        "front": {
+          "versions": [
+            "front-short_terra_v1.png",
+            "front-short_terra_v2.png",
+            "front-short_terra_v3.png",
+            "front-short_terra_v4.png",
+            "front-short_terra_v5.png",
+            "front-short_terra_v6.png",
+            "front-short_terra_v7.png",
+            "front-short_terra_v8.png",
+            "front-short_terra-2_v1.png",
+            "front-short_terra-2_v2.png",
+            "front-short_terra-2_v3.png"
+          ],
+          "selected": null
+        },
+        "back": {
+          "versions": [
+            "back-short_terra_v1.png",
+            "back-short_terra_v2.png",
+            "back-short_terra_v3.png",
+            "back-short_terra_v4.png",
+            "back-short_terra_v5.png",
+            "back-short_terra_v6.png",
+            "back-short_terra_v7.png",
+            "back-short_terra-2_v1.png",
+            "back-short_terra-2_v2.png",
+            "back-short_terra-2_v3.png",
+            "back-short_terra-2_v4.png",
+            "back-short_terra-2_v5.png"
+          ],
+          "selected": null
+        },
+        "detail": {
+          "versions": [
+            "detail-short_terra_v1.png",
+            "detail-short_terra_v2.png",
+            "detail-short_terra_v3.png",
+            "detail-short_terra-2_v1.png"
+          ],
+          "selected": null
+        },
+        "collar": {
+          "versions": [
+            "detail-collar_terra_v1.png",
+            "detail-collar_terra_v2.png",
+            "detail-collar_terra_v3.png",
+            "detail-collar_terra_v4.png",
+            "detail-collar_terra_v5.png",
+            "detail-collar_terra_v6.png",
+            "detail-collar_terra_v7.png",
+            "detail-collar_terra-2_v1.png",
+            "detail-collar_terra-2_v2.png",
+            "detail-collar_terra-2_v3.png",
+            "detail-collar_terra-2_v4.png",
+            "detail-collar_terra-2_v5.png"
+          ],
+          "selected": null
+        }
+      }
+    },
+    {
+      "id": "terra-long",
+      "color": "terra",
+      "sleeve": "long",
+      "label": "Long Sleeve Polo - Terra Cotta",
+      "shots": {
+        "front": {
+          "versions": [
+            "front-long_terra_v1.png",
+            "front-long_terra_v2.png",
+            "front-long_terra_v3.png",
+            "front-long_terra_v4.png",
+            "front-long_terra_v5.png",
+            "front-long_terra-2_v1.png",
+            "front-long_terra-2_v2.png",
+            "front-long_terra-2_v3.png"
+          ],
+          "selected": null
+        },
+        "back": {
+          "versions": [
+            "back-long_terra_v1.png",
+            "back-long_terra_v2.png",
+            "back-long_terra_v3.png",
+            "back-long_terra_v4.png",
+            "back-long_terra_v5.png",
+            "back-long_terra_v6.png",
+            "back-long_terra-2_v1.png",
+            "back-long_terra-2_v2.png",
+            "back-long_terra-2_v3.png",
+            "back-long_terra-2_v4.png",
+            "back-long_terra-2_v5.png"
+          ],
+          "selected": null
+        },
+        "detail": {
+          "versions": [
+            "detail-long_terra_v1.png",
+            "detail-long_terra_v2.png",
+            "detail-long_terra_v3.png",
+            "detail-long_terra_v4.png",
+            "detail-long_terra_v5.png",
+            "detail-long_terra-2_v1.png",
+            "detail-long_terra-2_v2.png"
+          ],
+          "selected": null
+        },
+        "collar": {
+          "versions": [
+            "detail-collar_terra_v1.png",
+            "detail-collar_terra_v2.png",
+            "detail-collar_terra_v3.png",
+            "detail-collar_terra_v4.png",
+            "detail-collar_terra_v5.png",
+            "detail-collar_terra_v6.png",
+            "detail-collar_terra_v7.png",
+            "detail-collar_terra-2_v1.png",
+            "detail-collar_terra-2_v2.png",
+            "detail-collar_terra-2_v3.png",
+            "detail-collar_terra-2_v4.png",
+            "detail-collar_terra-2_v5.png"
+          ],
+          "selected": null
+        }
+      }
+    }
+  ],
+  "refs": [
+    {
+      "category": "Master Poses",
+      "name": "back-long-master",
+      "path": "refs/master-ref/back-long-master.jpg"
+    },
+    {
+      "category": "Master Poses",
+      "name": "back-short-master",
+      "path": "refs/master-ref/back-short-master.jpg"
+    },
+    {
+      "category": "Master Poses",
+      "name": "detail-collar-master-original",
+      "path": "refs/master-ref/detail-collar-master-original.jpg"
+    },
+    {
+      "category": "Master Poses",
+      "name": "detail-collar-master",
+      "path": "refs/master-ref/detail-collar-master.jpg"
+    },
+    {
+      "category": "Master Poses",
+      "name": "detail-long-master",
+      "path": "refs/master-ref/detail-long-master.jpg"
+    },
+    {
+      "category": "Master Poses",
+      "name": "detail-short-master",
+      "path": "refs/master-ref/detail-short-master.jpg"
+    },
+    {
+      "category": "Master Poses",
+      "name": "front-long-master",
+      "path": "refs/master-ref/front-long-master.jpg"
+    },
+    {
+      "category": "Master Poses",
+      "name": "front-short-master",
+      "path": "refs/master-ref/front-short-master.jpg"
+    },
+    {
+      "category": "Buttons",
+      "name": "black-button",
+      "path": "refs/refs/black-button.jpg"
+    },
+    {
+      "category": "Brand",
+      "name": "black-original",
+      "path": "refs/refs/black-original.jpg"
+    },
+    {
+      "category": "Swatches",
+      "name": "black-swatch",
+      "path": "refs/refs/black-swatch.jpg"
+    },
+    {
+      "category": "Brand",
+      "name": "emblem",
+      "path": "refs/refs/emblem.jpg"
+    },
+    {
+      "category": "Buttons",
+      "name": "navy-button",
+      "path": "refs/refs/navy-button.jpg"
+    },
+    {
+      "category": "Brand",
+      "name": "navy-original",
+      "path": "refs/refs/navy-original.jpg"
+    },
+    {
+      "category": "Swatches",
+      "name": "navy-swatch",
+      "path": "refs/refs/navy-swatch.jpg"
+    },
+    {
+      "category": "Buttons",
+      "name": "off-white-button",
+      "path": "refs/refs/off-white-button.jpg"
+    },
+    {
+      "category": "Brand",
+      "name": "off-white-original",
+      "path": "refs/refs/off-white-original.jpg"
+    },
+    {
+      "category": "Swatches",
+      "name": "off-white-swatch",
+      "path": "refs/refs/off-white-swatch.jpg"
+    },
+    {
+      "category": "Swatches",
+      "name": "safari-2-swatch",
+      "path": "refs/refs/safari-2-swatch.jpg"
+    },
+    {
+      "category": "Buttons",
+      "name": "safari-button",
+      "path": "refs/refs/safari-button.jpg"
+    },
+    {
+      "category": "Brand",
+      "name": "safari-original",
+      "path": "refs/refs/safari-original.jpg"
+    },
+    {
+      "category": "Swatches",
+      "name": "safari-swatch",
+      "path": "refs/refs/safari-swatch.jpg"
+    },
+    {
+      "category": "Buttons",
+      "name": "sand-button",
+      "path": "refs/refs/sand-button.jpg"
+    },
+    {
+      "category": "Brand",
+      "name": "sand-original",
+      "path": "refs/refs/sand-original.jpg"
+    },
+    {
+      "category": "Swatches",
+      "name": "sand-swatch",
+      "path": "refs/refs/sand-swatch.jpg"
+    },
+    {
+      "category": "Buttons",
+      "name": "taupe-button",
+      "path": "refs/refs/taupe-button.jpg"
+    },
+    {
+      "category": "Brand",
+      "name": "taupe-original",
+      "path": "refs/refs/taupe-original.jpg"
+    },
+    {
+      "category": "Swatches",
+      "name": "taupe-swatch",
+      "path": "refs/refs/taupe-swatch.jpg"
+    },
+    {
+      "category": "Swatches",
+      "name": "terra-2-swatch",
+      "path": "refs/refs/terra-2-swatch.jpg"
+    },
+    {
+      "category": "Buttons",
+      "name": "terra-button",
+      "path": "refs/refs/terra-button.jpg"
+    },
+    {
+      "category": "Brand",
+      "name": "terra-original",
+      "path": "refs/refs/terra-original.jpg"
+    },
+    {
+      "category": "Swatches",
+      "name": "terra-swatch",
+      "path": "refs/refs/terra-swatch.jpg"
+    }
+  ],
+  "models": [
+    {
+      "id": "SR01",
+      "style": "classic",
+      "path": "models/SR01/SR01_classic.jpg"
+    },
+    {
+      "id": "SR01",
+      "style": "editorial",
+      "path": "models/SR01/SR01_editorial.jpg"
+    },
+    {
+      "id": "SR01",
+      "style": "profile",
+      "path": "models/SR01/SR01_profile.jpg"
+    },
+    {
+      "id": "SR01",
+      "style": "relaxed",
+      "path": "models/SR01/SR01_relaxed.jpg"
+    },
+    {
+      "id": "SR01",
+      "style": "serious",
+      "path": "models/SR01/SR01_serious.jpg"
+    },
+    {
+      "id": "SR02",
+      "style": "classic",
+      "path": "models/SR02/SR02_classic.jpg"
+    },
+    {
+      "id": "SR02",
+      "style": "editorial",
+      "path": "models/SR02/SR02_editorial.jpg"
+    },
+    {
+      "id": "SR02",
+      "style": "profile",
+      "path": "models/SR02/SR02_profile.jpg"
+    },
+    {
+      "id": "SR02",
+      "style": "relaxed",
+      "path": "models/SR02/SR02_relaxed.jpg"
+    },
+    {
+      "id": "SR02",
+      "style": "serious",
+      "path": "models/SR02/SR02_serious.jpg"
+    },
+    {
+      "id": "SR03",
+      "style": "classic",
+      "path": "models/SR03/SR03_classic.jpg"
+    },
+    {
+      "id": "SR03",
+      "style": "editorial",
+      "path": "models/SR03/SR03_editorial.jpg"
+    },
+    {
+      "id": "SR03",
+      "style": "profile",
+      "path": "models/SR03/SR03_profile.jpg"
+    },
+    {
+      "id": "SR03",
+      "style": "relaxed",
+      "path": "models/SR03/SR03_relaxed.jpg"
+    },
+    {
+      "id": "SR03",
+      "style": "serious",
+      "path": "models/SR03/SR03_serious.jpg"
+    },
+    {
+      "id": "SR10",
+      "style": "a_hero",
+      "path": "models/SR10/SR10_a_hero.jpg"
+    },
+    {
+      "id": "SR10",
+      "style": "b_closeup",
+      "path": "models/SR10/SR10_b_closeup.jpg"
+    },
+    {
+      "id": "SR10",
+      "style": "c_threequarter",
+      "path": "models/SR10/SR10_c_threequarter.jpg"
+    },
+    {
+      "id": "SR10",
+      "style": "d_profile",
+      "path": "models/SR10/SR10_d_profile.jpg"
+    },
+    {
+      "id": "SR10",
+      "style": "e_lifestyle",
+      "path": "models/SR10/SR10_e_lifestyle.jpg"
+    },
+    {
+      "id": "SR11",
+      "style": "a_hero",
+      "path": "models/SR11/SR11_a_hero.jpg"
+    },
+    {
+      "id": "SR11",
+      "style": "b_closeup",
+      "path": "models/SR11/SR11_b_closeup.jpg"
+    },
+    {
+      "id": "SR11",
+      "style": "c_threequarter",
+      "path": "models/SR11/SR11_c_threequarter.jpg"
+    },
+    {
+      "id": "SR11",
+      "style": "d_profile",
+      "path": "models/SR11/SR11_d_profile.jpg"
+    },
+    {
+      "id": "SR11",
+      "style": "e_lifestyle",
+      "path": "models/SR11/SR11_e_lifestyle.jpg"
+    },
+    {
+      "id": "SR12",
+      "style": "a_hero",
+      "path": "models/SR12/SR12_a_hero.jpg"
+    },
+    {
+      "id": "SR12",
+      "style": "b_closeup",
+      "path": "models/SR12/SR12_b_closeup.jpg"
+    },
+    {
+      "id": "SR12",
+      "style": "c_threequarter",
+      "path": "models/SR12/SR12_c_threequarter.jpg"
+    },
+    {
+      "id": "SR12",
+      "style": "d_profile",
+      "path": "models/SR12/SR12_d_profile.jpg"
+    },
+    {
+      "id": "SR12",
+      "style": "e_lifestyle",
+      "path": "models/SR12/SR12_e_lifestyle.jpg"
+    },
+    {
+      "id": "indigold",
+      "style": "IG01",
+      "path": "models/indigold/Indigold_Man_01_IG01_4K_reference.jpg"
+    },
+    {
+      "id": "indigold",
+      "style": "IG02",
+      "path": "models/indigold/Indigold_Man_02_IG02_4K_reference.jpg"
+    },
+    {
+      "id": "indigold",
+      "style": "IG03",
+      "path": "models/indigold/Indigold_Man_03_IG03_4K_reference.jpg"
+    },
+    {
+      "id": "indigold",
+      "style": "IG04",
+      "path": "models/indigold/Indigold_Man_04_IG04_4K_reference.jpg"
+    },
+    {
+      "id": "indigold",
+      "style": "IG05",
+      "path": "models/indigold/Indigold_Man_05_IG05_4K_reference.jpg"
+    },
+    {
+      "id": "indigold",
+      "style": "IG06",
+      "path": "models/indigold/Indigold_Man_06_IG06_4K_reference.jpg"
+    },
+    {
+      "id": "indigold",
+      "style": "IG09",
+      "path": "models/indigold/Indigold_Man_09_IG09_4K_reference.jpg"
+    },
+    {
+      "id": "indigold",
+      "style": "IG10",
+      "path": "models/indigold/Indigold_Man_10_IG10_4K_reference.jpg"
+    },
+    {
+      "id": "indigold",
+      "style": "IG11",
+      "path": "models/indigold/Indigold_Man_11_IG11_4K_reference.jpg"
+    },
+    {
+      "id": "indigold",
+      "style": "IG12",
+      "path": "models/indigold/Indigold_Man_12_IG12_4K_reference.jpg"
+    },
+    {
+      "id": "indigold",
+      "style": "IG13",
+      "path": "models/indigold/Indigold_Man_13_IG13_4K_reference.jpg"
+    },
+    {
+      "id": "indigold",
+      "style": "IG14",
+      "path": "models/indigold/Indigold_Man_14_IG14_4K_reference.jpg"
+    },
+    {
+      "id": "indigold",
+      "style": "IG16",
+      "path": "models/indigold/Indigold_Man_16_IG16_4K_reference.jpg"
+    },
+    {
+      "id": "indigold",
+      "style": "IG17",
+      "path": "models/indigold/Indigold_Man_17_IG17_4K_reference.jpg"
+    },
+    {
+      "id": "indigold",
+      "style": "IG18",
+      "path": "models/indigold/Indigold_Man_18_IG18_4K_reference.jpg"
+    },
+    {
+      "id": "indigold",
+      "style": "IG19",
+      "path": "models/indigold/Indigold_Man_19_IG19_4K_reference.jpg"
+    },
+    {
+      "id": "indigold",
+      "style": "IG20",
+      "path": "models/indigold/Indigold_Man_20_IG20_4K_reference.jpg"
+    },
+    {
+      "id": "indigold",
+      "style": "IG21",
+      "path": "models/indigold/Indigold_Man_21_IG21_4K_reference.jpg"
+    },
+    {
+      "id": "indigold",
+      "style": "IG22",
+      "path": "models/indigold/Indigold_Man_22_IG22_4K_reference.jpg"
+    },
+    {
+      "id": "indigold",
+      "style": "IG23",
+      "path": "models/indigold/Indigold_Man_23_IG23_4K_reference.jpg"
+    },
+    {
+      "id": "indigold",
+      "style": "IG24",
+      "path": "models/indigold/Indigold_Man_24_IG24_4K_reference.jpg"
+    },
+    {
+      "id": "indigold",
+      "style": "IG25",
+      "path": "models/indigold/Indigold_Man_25_IG25_4K_reference.jpg"
+    },
+    {
+      "id": "indigold",
+      "style": "IG26",
+      "path": "models/indigold/Indigold_Man_26_IG26_4K_reference.jpg"
+    },
+    {
+      "id": "indigold",
+      "style": "IG27",
+      "path": "models/indigold/Indigold_Man_27_IG27_4K_reference.jpg"
+    },
+    {
+      "id": "indigold",
+      "style": "IG28",
+      "path": "models/indigold/Indigold_Man_28_IG28_4K_reference.jpg"
+    },
+    {
+      "id": "indigold",
+      "style": "IG29",
+      "path": "models/indigold/Indigold_Man_29_IG29_4K_reference.jpg"
+    },
+    {
+      "id": "indigold",
+      "style": "IG30",
+      "path": "models/indigold/Indigold_Man_30_IG30_4K_reference.jpg"
+    },
+    {
+      "id": "indigold",
+      "style": "IG31",
+      "path": "models/indigold/Indigold_Man_31_IG31_4K_reference.jpg"
+    },
+    {
+      "id": "indigold",
+      "style": "IG32",
+      "path": "models/indigold/Indigold_Man_32_IG32_4K_reference.jpg"
+    },
+    {
+      "id": "indigold",
+      "style": "IG33",
+      "path": "models/indigold/Indigold_Man_33_IG33_4K_reference.jpg"
+    },
+    {
+      "id": "indigold",
+      "style": "IG34",
+      "path": "models/indigold/Indigold_Man_34_IG34_4K_reference.jpg"
+    },
+    {
+      "id": "indigold",
+      "style": "IG35",
+      "path": "models/indigold/Indigold_Man_35_IG35_4K_reference.jpg"
+    },
+    {
+      "id": "indigold",
+      "style": "IG36",
+      "path": "models/indigold/Indigold_Man_36_IG36_4K_reference.jpg"
+    },
+    {
+      "id": "indigold",
+      "style": "IG37",
+      "path": "models/indigold/Indigold_Man_37_IG37_4K_reference.jpg"
+    },
+    {
+      "id": "indigold",
+      "style": "IG38",
+      "path": "models/indigold/Indigold_Man_38_IG38_4K_reference.jpg"
+    },
+    {
+      "id": "indigold",
+      "style": "IG39",
+      "path": "models/indigold/Indigold_Man_39_IG39_4K_reference.jpg"
+    },
+    {
+      "id": "indigold",
+      "style": "IG40",
+      "path": "models/indigold/Indigold_Man_40_IG40_4K_reference.jpg"
+    },
+    {
+      "id": "indigold",
+      "style": "IG41",
+      "path": "models/indigold/Indigold_Man_41_IG41_4K_reference.jpg"
+    },
+    {
+      "id": "indigold",
+      "style": "IG42",
+      "path": "models/indigold/Indigold_Man_42_IG42_4K_reference.jpg"
+    },
+    {
+      "id": "indigold",
+      "style": "IG43",
+      "path": "models/indigold/Indigold_Man_43_IG43_4K_reference.jpg"
+    },
+    {
+      "id": "indigold",
+      "style": "IG44",
+      "path": "models/indigold/Indigold_Man_44_IG44_4K_reference.jpg"
+    },
+    {
+      "id": "indigold",
+      "style": "IG45",
+      "path": "models/indigold/Indigold_Man_45_IG45_4K_reference.jpg"
+    },
+    {
+      "id": "indigold",
+      "style": "IG46",
+      "path": "models/indigold/Indigold_Man_46_IG46_4K_reference.jpg"
+    },
+    {
+      "id": "indigold",
+      "style": "IG47",
+      "path": "models/indigold/Indigold_Man_47_IG47_4K_reference.jpg"
+    },
+    {
+      "id": "indigold",
+      "style": "IG48",
+      "path": "models/indigold/Indigold_Man_48_IG48_4K_reference.jpg"
+    },
+    {
+      "id": "indigold",
+      "style": "IG49",
+      "path": "models/indigold/Indigold_Man_49_IG49_4K_reference.jpg"
+    },
+    {
+      "id": "indigold",
+      "style": "IG50",
+      "path": "models/indigold/Indigold_Man_50_IG50_4K_reference.jpg"
+    },
+    {
+      "id": "indigold",
+      "style": "IG51",
+      "path": "models/indigold/Indigold_Man_51_IG51_4K_reference.jpg"
+    },
+    {
+      "id": "indigold",
+      "style": "IG52",
+      "path": "models/indigold/Indigold_Man_52_IG52_4K_reference.jpg"
+    },
+    {
+      "id": "indigold",
+      "style": "IG53",
+      "path": "models/indigold/Indigold_Man_53_IG53_4K_reference.jpg"
+    },
+    {
+      "id": "indigold",
+      "style": "IG54",
+      "path": "models/indigold/Indigold_Man_54_IG54_4K_reference.jpg"
+    },
+    {
+      "id": "indigold",
+      "style": "IG55",
+      "path": "models/indigold/Indigold_Man_55_IG55_4K_reference.jpg"
+    },
+    {
+      "id": "indigold",
+      "style": "IG56",
+      "path": "models/indigold/Indigold_Man_56_IG56_4K_reference.jpg"
+    },
+    {
+      "id": "indigold",
+      "style": "IG57",
+      "path": "models/indigold/Indigold_Man_57_IG57_4K_reference.jpg"
+    },
+    {
+      "id": "indigold",
+      "style": "IG58",
+      "path": "models/indigold/Indigold_Man_58_IG58_4K_reference.jpg"
+    },
+    {
+      "id": "indigold",
+      "style": "IG59",
+      "path": "models/indigold/Indigold_Man_59_IG59_4K_reference.jpg"
+    },
+    {
+      "id": "indigold",
+      "style": "IG60",
+      "path": "models/indigold/Indigold_Man_60_IG60_4K_reference.jpg"
+    },
+    {
+      "id": "indigold",
+      "style": "IG61",
+      "path": "models/indigold/Indigold_Man_61_IG61_4K_reference.jpg"
+    },
+    {
+      "id": "indigold",
+      "style": "IG62",
+      "path": "models/indigold/Indigold_Man_62_IG62_4K_reference.jpg"
+    },
+    {
+      "id": "indigold",
+      "style": "IG63",
+      "path": "models/indigold/Indigold_Man_63_IG63_4K_reference.jpg"
+    },
+    {
+      "id": "indigold",
+      "style": "IG64",
+      "path": "models/indigold/Indigold_Man_64_IG64_4K_reference.jpg"
+    },
+    {
+      "id": "indigold",
+      "style": "IG65",
+      "path": "models/indigold/Indigold_Man_65_IG65_4K_reference.jpg"
+    },
+    {
+      "id": "indigold",
+      "style": "IG66",
+      "path": "models/indigold/Indigold_Man_66_IG66_4K_reference.jpg"
+    },
+    {
+      "id": "indigold",
+      "style": "IG67",
+      "path": "models/indigold/Indigold_Man_67_IG67_4K_reference.jpg"
+    },
+    {
+      "id": "indigold",
+      "style": "IG68",
+      "path": "models/indigold/Indigold_Man_68_IG68_4K_reference.jpg"
+    },
+    {
+      "id": "indigold",
+      "style": "IG69",
+      "path": "models/indigold/Indigold_Man_69_IG69_4K_reference.jpg"
+    },
+    {
+      "id": "indigold",
+      "style": "IG70",
+      "path": "models/indigold/Indigold_Man_70_IG70_4K_reference.jpg"
+    },
+    {
+      "id": "indigold",
+      "style": "IG71",
+      "path": "models/indigold/Indigold_Man_71_IG71_4K_reference.jpg"
+    },
+    {
+      "id": "indigold",
+      "style": "IG72",
+      "path": "models/indigold/Indigold_Man_72_IG72_4K_reference.jpg"
+    },
+    {
+      "id": "indigold",
+      "style": "IG73",
+      "path": "models/indigold/Indigold_Man_73_IG73_4K_reference.jpg"
+    },
+    {
+      "id": "indigold",
+      "style": "IG74",
+      "path": "models/indigold/Indigold_Man_74_IG74_4K_reference.jpg"
+    },
+    {
+      "id": "indigold",
+      "style": "IG75",
+      "path": "models/indigold/Indigold_Man_75_IG75_4K_reference.jpg"
+    },
+    {
+      "id": "indigold",
+      "style": "IG76",
+      "path": "models/indigold/Indigold_Man_76_IG76_4K_reference.jpg"
+    },
+    {
+      "id": "indigold",
+      "style": "IG77",
+      "path": "models/indigold/Indigold_Man_77_IG77_4K_reference.jpg"
+    },
+    {
+      "id": "indigold",
+      "style": "IG78",
+      "path": "models/indigold/Indigold_Man_78_IG78_4K_reference.jpg"
+    }
+  ]
+}
